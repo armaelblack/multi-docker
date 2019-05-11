@@ -37,7 +37,7 @@ services:
       - /app/node_modules
       - ./worker:/app
   nginx:
-    restart: always
+    restart: "no"
     build:
       dockerfile: Dockerfile.dev
       context: ./nginx
